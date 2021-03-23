@@ -10,5 +10,5 @@ def driver():
       "platformVersion": "14.4",
       "deviceName": "iPhone 8"
     }
+
     driver = webdriver.Remote('http://localhost:4723/wd/hub',desired_capabilities)
-    driver.implicitly_wait(10)
