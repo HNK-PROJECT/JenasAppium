@@ -1,6 +1,7 @@
 import pytest
 from appium import webdriver
 
+
 class Base:
     def __init__(self, driver):
         desired_capabilities = {

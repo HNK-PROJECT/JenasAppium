@@ -65,7 +65,7 @@ class JeansApp(Base):
         )
 
     def do_order(self):
-        order_window = self.driver.find_element_by_accessibility_id('Images/Menu/OrderButton.png').click().click()
+        order_window = self.driver.find_element_by_accessibility_id('Images/Menu/OrderButton.png').click()
         order_sp = self.driver.find_element_by_ios_class_chain('**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]')
         order_sp.click()
         order_sp = self.driver.find_element_by_ios_predicate('label == "Заказ >"').click()

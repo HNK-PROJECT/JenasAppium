@@ -1,11 +1,3 @@
-import allure
-import pytest
-from mobile import JeansApp
-
-
-# pytest --alluredir allure_results  -v test_app.py
-
-
 @allure.feature('Full visit test')
 @allure.story('Тестирование синхронизации, визита и заказа в визите')
 @allure.severity('blocker')
